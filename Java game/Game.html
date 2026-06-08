@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps game</title>
+    <script src="code.js"></script>
+    <link href="main.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <h1 id="heading"> Craps! </h1>
+    </header>
+     <!-- REQUIRED: Form for user input -->
+    <form id="gameForm">
+        <!-- Label for the name input -->
+        <label for="playerName">Enter your name:</label>
+        <!-- Text input for the player's name -->
+        <input type="text" id="playerName" name="playerName">
+        <!-- Button that runs the game -->
+        <button type="button" onclick="playGame()">Roll Dice</button>
+    </form>
+    <!-- Output area where JavaScript writes results -->
+    <div id="gameOutput"></div>
+</body>
+</html>
