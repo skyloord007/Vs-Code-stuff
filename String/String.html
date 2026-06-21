@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Link to my CSS file -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Set the page title -->
+    <title>Secret Club Entrance</title>
+</head>
+<body>
+    <!-- Main container for layout -->
+    <div class="container">
+        <!-- Page header -->
+        <h1>Are you a member of the Secret Club?</h1>
+        <!-- Form that holds all inputs and one submit button -->
+        <!-- onsubmit calls validateForm() and stops page reload -->
+        <form onsubmit="return validateForm()">
+            <!-- First name input -->
+            <label>First Name:</label><br>
+            <input type="text" id="firstName"><br>
+            <!-- Last name input -->
+            <label>Last Name:</label><br>
+            <input type="text" id="lastName"><br>
+            <!-- Zip code input -->
+            <label>Zip Code:</label><br>
+            <input type="text" id="zip"><br>
+            <!-- Submit button -->
+            <input type="submit" value="Reveal Secret Message">
+        </form>
+        <!-- Area where validation messages OR secret message will appear -->
+        <div id="message"></div>
+    </div>
+       <!-- External JavaScript file -->
+    <script src="strings.js"></script>
+
+</body>
+</html>
