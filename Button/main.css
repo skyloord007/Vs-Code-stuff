@@ -1,0 +1,29 @@
+body {
+    background-color:black;
+    color: Goldenrod;
+}
+nav {
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+footer {
+    text-align: center;
+    margin-right: 200px;
+}
+#meme {
+    margin-right: 200px;
+}
+header {
+    text-align: center;
+}
+/* Comment: Smooth flipping animation */
+#meme {
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,31 @@
+<!-- 
+    Name: Skyler
+    Assignment: Start/Stop Meme Movement
+    Description: HTML file referencing external CSS and JS
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Comment: Page title -->
+    <title>Dance bug</title>
+    <!-- Comment: Reference external stylesheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Comment: Page header -->
+    <h1>Dancing Bug</h1>
+    <!-- Comment: Meme image -->
+    <img id="meme" src="Yippee.webp" alt="Yippee Meme">
+    <!-- Comment: Message area for innerHTML updates -->
+    <div id="msg">Press Start to make him dance!</div>
+    <!-- Comment: Required form for user input -->
+    <form onsubmit="return false;">
+        <!-- Comment: Start button wired to JS function -->
+        <button id="startBtn" onclick="startClicked()">Start</button>
+        <!-- Comment: Stop button wired to JS function -->
+        <button id="stopBtn" onclick="stopClicked()" disabled>Stop</button>
+    </form>
+    <!-- Comment: Reference external JavaScript file -->
+    <script src="Button.Js"></script>
+</body>
+</html>
