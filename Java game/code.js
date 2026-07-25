@@ -3,6 +3,10 @@
 // Called when the user clicks the Start Game button
 // ---------------------------------------------
 function playGame() {
+    // Play dice sound
+    const sfx = document.getElementById("diceSound");
+    sfx.currentTime = 0;   // rewind so it plays every time
+    sfx.play();
     // Get the player's name from the input field
     let name = document.getElementById("playerName").value;
     // Call the second required function to generate a greeting
@@ -21,7 +25,7 @@ function playGame() {
     // ---------------------------------------------
     // If the sum is 7 or 11 → player loses
     if (sum === 7 || sum === 11) {
-        resultMessage = "CRAPS – You lose!";
+        resultMessage = "CRAPS - You lose!";
     }
     // If dice match AND are even → player wins
     else if (die1 === die2 && die1 % 2 === 0) {
@@ -34,6 +38,9 @@ function playGame() {
     // ---------------------------------------------
     // Output results to the webpage using innerHTML
     // ---------------------------------------------
+    // Play dice sound
+    document.getElementById("diceSound").play();
+
     document.getElementById("gameOutput").innerHTML =
         `<h2>${greeting}</h2>
          <p>You rolled: ${die1} and ${die2}</p>
