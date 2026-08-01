@@ -1,0 +1,82 @@
+<!-- 
+    Name: Skyler Eastman
+    Assignment: Fishing Game (Classes + Functions + Logic)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fishing Game</title>
+
+    <style>
+        body {
+            background: #c7f0ff;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        #gameBox {
+            background: white;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px #666;
+        }
+
+        #progressBar {
+            width: 300px;
+            height: 25px;
+            background: #ddd;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #progressFill {
+            height: 100%;
+            width: 0%;
+            background: #4caf50;
+        }
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+        }
+        #message img {
+            display: block;
+            margin: 10px auto;
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="gameBox">
+
+        <!-- Title -->
+        <h1>Little Fishing</h1>
+
+        <!-- Cute fishing image -->
+        <img src="Fishing Immage.png" alt="Fishing">
+
+        <!-- Form for fishing input -->
+        <form onsubmit="return catchFish()">
+    <!-- Holdable button -->
+    <input type="submit" value="Hold to Fish"
+           onmousedown="startHold()"
+           onmouseup="endHold()">
+</form>
+
+    <p id="message"></p>
+
+    <div id="progressBar">
+    <div id="progressFill"></div>
+</div>
+
+<script src="fishingCode.Js"></script>
+
+</body>
+</html>
