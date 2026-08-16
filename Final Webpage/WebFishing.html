@@ -1,0 +1,76 @@
+<!-- 
+    Name: Skyler Eastman
+    Assignment: Fishing Game (Classes + Functions + Logic)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Little Fishing</title>
+
+    <!-- Fishing-only stylesheet -->
+    <link rel="stylesheet" href="Fishing.css">
+</head>
+
+<body>
+
+    <!-- Page header -->
+    <header>
+        <h1>Little Fishing</h1>
+    </header>
+
+    <!-- Project content stays centered -->
+    <div class="project-container">
+
+        <h2 class="project-title">Hold to Fish!</h2>
+
+        <!-- Cute fishing image -->
+        <img src="Fishing Immage.png" alt="Fishing" id="fishingPic">
+
+        <!-- Hold-to-fish form -->
+        <form onsubmit="return catchFish()">
+            <input type="submit" value="Hold to Fish"
+                   onmousedown="startHold()"
+                   onmouseup="endHold()">
+        </form>
+
+        <!-- Message area -->
+        <p id="message"></p>
+
+        <!-- Progress bar -->
+        <div id="progressBar">
+            <div id="progressFill"></div>
+        </div>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>My Projects</h2>
+
+        <div class="nav-links">
+            <a href="./Final.html">Home</a>
+            <a href="./Memepage.html">Meme</a>
+            <a href="./Button.html">Button</a>
+            <a href="./Craps.html">Craps</a>
+            <a href="./String.html">Secret Message</a>
+            <a href="./Palindrome.html">Palindrome Checker</a>
+            <a href="./Table.html">Parts Table</a>
+            <a href="./WebFishing.html">Little Fishing</a>
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        Skyler<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+    <!-- Fishing game logic -->
+    <script src="fishingCode.js"></script>
+
+</body>
+</html>

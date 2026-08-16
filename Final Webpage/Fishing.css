@@ -1,0 +1,126 @@
+/* ORIGINAL fishing page colors */
+body {
+    background: #c7f0ff;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
+
+header {
+    background-color: #2b81a6;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Project container (replaces #gameBox but keeps original look) */
+.project-container {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #666;
+    text-align: center;
+}
+
+/* Project title */
+.project-title {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Fishing image */
+#fishingPic {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Hold-to-fish button */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* Message */
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Progress bar */
+#progressBar {
+    width: 300px;
+    height: 25px;
+    background: #ddd;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #37bcf5;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Nav header */
+nav h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-links a {
+    background-color: #2b81a6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #1a5c75;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #d37c10;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps</title>
+    <script src="code.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page header -->
+    <header>
+        <h1>Craps!</h1>
+    </header>
+
+    <!-- Project content stays centered -->
+    <div class="project-container">
+
+        <h2 class="project-title">Play Craps!</h2>
+
+        <!-- REQUIRED: Form for user input -->
+        <form id="gameForm">
+            <label for="playerName">Enter your name:</label>
+            <input type="text" id="playerName" name="playerName">
+            <button type="button" onclick="playGame()">Roll Dice</button>
+        </form>
+
+        <!-- Output area -->
+        <div id="gameOutput"></div>
+
+        <!-- Dice sound -->
+        <audio id="diceSound" src="DiceSound.mp3" type="audio/mpeg" preload="auto"></audio>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+    <h2>My Projects</h2>
+
+    <div class="nav-links">
+        <a href="./Final.html">Home</a>
+        <a href="./Memepage.html">Meme</a>
+        <a href="./Button.html">Button</a>
+        <a href="./Craps.html">Craps</a>
+        <a href="./String.html">Secret Message</a>
+        <a href="./Palindrome.html">Palindrome Checker</a>
+        <a href="./Table.html">Parts Table</a>
+        <a href="./WebFishing.html">Little Fishing</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Skyler<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+</body>
+</html>

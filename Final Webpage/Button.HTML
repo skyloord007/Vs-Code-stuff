@@ -1,0 +1,67 @@
+<!-- 
+    Name: Skyler
+    Assignment: Start/Stop Meme Movement
+    Description: HTML file referencing external CSS and JS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dance Bug</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Page header (stays at top) -->
+    <header>
+        <h1>Dancing Bug</h1>
+    </header>
+
+    <!-- Project content stays centered -->
+    <div class="project-container">
+
+        <!-- Project title (your original h1 moved here) -->
+        <h2 class="project-title">Dancing Bug</h2>
+
+        <!-- Meme image -->
+        <img id="meme" src="Yippee.webp" alt="Yippee Meme">
+
+        <!-- Message area -->
+        <div id="msg">Press Start to make him dance!</div>
+
+        <!-- Buttons -->
+        <form onsubmit="return false;">
+            <button id="startBtn" onclick="startClicked()">Start</button>
+            <button id="stopBtn" onclick="stopClicked()" disabled>Stop</button>
+        </form>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+    <h2>My Projects</h2>
+
+    <div class="nav-links">
+        <a href="./Final.html">Home</a>
+        <a href="./Memepage.html">Meme</a>
+        <a href="./Button.html">Button</a>
+        <a href="./Craps.html">Craps</a>
+        <a href="./String.html">Secret Message</a>
+        <a href="./Palindrome.html">Palindrome Checker</a>
+        <a href="./Table.html">Parts Table</a>
+        <a href="./WebFishing.html">Little Fishing</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Skyler<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Button.Js"></script>
+
+</body>
+</html>
